@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello JeuController!{% endblock %}
+
+{% block contenu %}
+
+    {% for jeu in jeux %}
+        <p> {{ jeu.nomJeu }} </p>
+    {% endfor %}
+
+{% endblock %}

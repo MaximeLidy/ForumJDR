@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+    </head>
+    <body>
+
+        {% if app.user %}
+            <a href="logout">Déconnexion</a>
+        {% else %}
+            <a href="register">Inscription</a>
+            <a href="login">Connexion</a>
+        {% endif %}
+
+        <a href="/">Accueil</a>
+
+        {% block body %}
+    
+
+        {% endblock %}
+        
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>

@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello{% endblock %}
+
+{% block body %}
+
+    {% for jeu in jeux %}
+        <a href="{{ path('scenarios', { 'id': jeu.id }) }}">{{ jeu.nomJeu }}</a>
+    {% endfor %}
+
+{% endblock %}
